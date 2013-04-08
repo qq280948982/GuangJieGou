@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dapei_list_item_padding"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/item_dapei_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"/>
+    
+    <TextView 
+        android:id="@+id/item_dapei_create_date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dapei_list_item_line_space"
+        android:textColor="@color/black"/>
+
+    <com.tim.guangjiegou.view.ItemImageView 
+        android:id="@+id/item_dapei_front_cover"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dapei_list_item_image_height"
+        android:layout_marginTop="@dimen/dapei_list_item_line_space"/>
+
+    <TextView 
+        android:id="@+id/item_dapei_description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dapei_list_item_line_space"
+        android:textColor="@color/black"
+        android:lines="3"/>
+    
+</LinearLayout>

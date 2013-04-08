@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/tab_footer_tab_bar_height"
+    android:weightSum="5" 
+    android:background="@color/orange">
+    
+    <com.tim.guangjiegou.view.ItemTabItem 
+        android:id="@+id/item_tabbar_item1"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"/>
+    
+    <com.tim.guangjiegou.view.ItemTabItem 
+        android:id="@+id/item_tabbar_item2"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"/>
+    
+    <com.tim.guangjiegou.view.ItemTabItem 
+        android:id="@+id/item_tabbar_item3"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"/>
+    
+    <com.tim.guangjiegou.view.ItemTabItem 
+        android:id="@+id/item_tabbar_item4"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"/>
+    
+    <com.tim.guangjiegou.view.ItemTabItem 
+        android:id="@+id/item_tabbar_item5"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"/>
+
+</LinearLayout>

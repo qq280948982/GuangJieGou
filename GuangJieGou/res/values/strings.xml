@@ -1,0 +1,61 @@
+<resources>
+
+    <string name="app_name">逛街购</string>
+    
+    <!-- Commons -->
+    <string name="common_on">开</string>
+    <string name="common_off">关</string>
+    
+    <!-- Header -->
+    <string name="header_for_remen_item">热单品</string>
+    <string name="header_for_remen_shop">热店铺</string>
+    
+    <!-- Tab -->
+    <string name="tab_renmen">热门</string>
+    <string name="tab_tapei">搭配</string>
+    <string name="tab_guangjie">逛街</string>
+    <string name="tab_shoucang">收藏</string>
+    <string name="tab_shezhi">设置</string>
+    
+    <!-- 设置界面 -->
+    <string name="shezhi_user_login">用户登录</string>
+    <string name="shezhi_taobao_login">淘宝账号登录</string>
+    <string name="shezhi_qq_login">QQ账号登录</string>
+    <string name="shezhi_sina_weibo_login">新浪微博登录</string>
+    <string name="shezhi_tencent_weibo_login">腾讯微博登录</string>
+    <string name="shezhi_general_settings">常用设置</string>
+    <string name="shezhi_browse_mode">浏览模式</string>
+    <string name="shezhi_browse_mode_quality">高清</string>
+    <string name="shezhi_browse_mode_low_flow">省流量</string>
+    <string name="shezhi_push_settings">推送设置</string>
+    <string name="shezhi_others_settings">其他</string>
+    <string name="shezhi_clear_image_cache">清除图片缓存</string>
+    <string name="shezhi_feedback">意见反馈</string>
+    <string name="shezhi_about">关于逛街购</string>
+    <string name="shezhi_bind_user">已绑定用户：%1$s</string>
+    
+    <!-- 登录 -->
+    <string name="login_taobao">淘宝登录</string>
+    
+    <!-- 商品详细 -->
+    <string name="item_detail_title">宝贝详情</string>
+    <string name="item_detail_review">评论</string>
+    <string name="item_detail_share">分享</string>
+    <string name="item_detail_like">喜欢</string>
+    <string name="item_detail_buy">购买</string>
+    <string name="item_detail_see_detail">查看详情</string>
+    <string name="item_detail_shop_owner">掌柜：%1$s</string>
+    
+    <!-- 淘宝WebView -->
+    <string name="taobao_webview_title">手机淘宝</string>
+    
+    <!-- 逛街tab -->
+    <string name="guangjie_search_hint">搜索宝贝</string>
+    
+    <!-- Tips -->
+    <string name="tips_cannot_get_shop_item_link">未能获得商品的淘宝链接</string>
+    <string name="tips_cannot_get_shop_link">未能获得店铺的淘宝链接</string>
+    <string name="tips_fetching_shop_item_link">正在获得商品的淘宝链接，请稍候</string>
+    <string name="tips_search_keyword_cannot_be_null">搜索关键字不能为空</string>
+    
+</resources>

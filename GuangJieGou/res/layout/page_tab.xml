@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.tim.guangjiegou.view.ItemHeaderView 
+        android:id="@+id/page_tab_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+    
+    <FrameLayout 
+        android:id="@+id/page_tab_content_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/page_tab_header"
+        android:layout_above="@+id/page_tab_tabbar" />
+    
+    <com.tim.guangjiegou.view.ItemTabBarView 
+        android:id="@+id/page_tab_tabbar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/tab_footer_tab_bar_height" 
+        android:layout_alignParentBottom="true"/>
+    
+</RelativeLayout>

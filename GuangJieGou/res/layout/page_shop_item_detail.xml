@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:OhImageButton="http://schemas.android.com/apk/res/com.tim.guangjiegou"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- Header -->
+    <com.tim.guangjiegou.view.ItemHeaderView 
+        android:id="@+id/page_shop_item_detail_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+    
+    <!-- Body -->
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+        <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+	        android:paddingLeft="5dp"
+	        android:paddingRight="5dp">
+            <!-- 卖家信息 -->
+            <com.tim.guangjiegou.view.ItemImageView 
+                android:id="@+id/page_shop_item_detail_shop_owner_img"
+                android:layout_width="@dimen/item_detail_shop_owner_img_size"
+                android:layout_height="@dimen/item_detail_shop_owner_img_size"
+                android:src="@drawable/ic_non_image_bg" />
+            <TextView 
+                android:id="@+id/page_shop_item_detail_shop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/page_shop_item_detail_shop_owner_img"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/black"/>
+            <TextView 
+                android:id="@+id/page_shop_item_detail_shop_owner_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/page_shop_item_detail_shop_owner_img"
+                android:layout_below="@+id/page_shop_item_detail_shop_name"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"/>
+            
+            <!-- 商品图片 -->
+            <FrameLayout 
+                android:id="@+id/page_shop_item_detail_image_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/page_shop_item_detail_shop_owner_img"
+                android:layout_marginTop="10dp">
+	            <com.tim.guangjiegou.view.ItemImageView 
+	                android:id="@+id/page_shop_item_detail_image"
+	                android:layout_width="fill_parent"
+	                android:background="@color/black_aa"
+	                android:layout_height="wrap_content"/>
+	            <TextView 
+	                android:id="@+id/page_shop_item_detail_likes"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="bottom"
+	                android:layout_margin="5dp"
+	                android:textColor="@color/black"
+	                android:gravity="center"/>
+            </FrameLayout>
+            
+            <!-- 交易信息 -->
+            <TextView 
+                android:id="@+id/page_shop_item_detail_price"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/item_detail_see_detail_btn_height"
+                android:layout_below="@+id/page_shop_item_detail_image_layout"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:textSize="22dp"
+                android:textStyle="bold" 
+                android:textColor="@color/price_color"/>
+            
+            <TextView 
+                android:id="@+id/page_shop_item_detail_buy"
+                android:layout_width="@dimen/item_detail_see_detail_btn_width"
+                android:layout_height="@dimen/item_detail_see_detail_btn_height"
+                android:layout_below="@+id/page_shop_item_detail_image_layout"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:background="@drawable/common_btn_orange"
+                android:text="@string/item_detail_see_detail"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+            
+            <!-- 商品标题 -->
+            <TextView 
+                android:id="@+id/page_shop_item_detail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/page_shop_item_detail_buy"
+                android:textColor="@color/black" />
+            
+        </RelativeLayout>
+    </ScrollView>
+    
+    <!-- Footer -->
+    <LinearLayout
+        android:orientation="horizontal" 
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/item_detail_bottom_bar_height"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+        
+        <lib.tim.view.OhImageButton 
+            android:id="@+id/page_shop_item_detail_tab_review"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            OhImageButton:text="@string/item_detail_review"
+            OhImageButton:textColor="@color/black"
+            OhImageButton:iconWidth="@dimen/item_detail_bottom_bar_icon_size"
+            OhImageButton:iconHeight="@dimen/item_detail_bottom_bar_icon_size"/>
+        
+        <lib.tim.view.OhImageButton 
+            android:id="@+id/page_shop_item_detail_tab_share"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            OhImageButton:text="@string/item_detail_share"
+            OhImageButton:textColor="@color/black"
+            OhImageButton:iconWidth="@dimen/item_detail_bottom_bar_icon_size"
+            OhImageButton:iconHeight="@dimen/item_detail_bottom_bar_icon_size"/>
+        
+        <lib.tim.view.OhImageButton 
+            android:id="@+id/page_shop_item_detail_tab_like"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            OhImageButton:text="@string/item_detail_like"
+            OhImageButton:textColor="@color/black"
+            OhImageButton:iconWidth="@dimen/item_detail_bottom_bar_icon_size"
+            OhImageButton:iconHeight="@dimen/item_detail_bottom_bar_icon_size"/>
+        
+        <lib.tim.view.OhImageButton 
+            android:id="@+id/page_shop_item_detail_tab_buy"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            OhImageButton:text="@string/item_detail_buy"
+            OhImageButton:textColor="@color/black"
+            OhImageButton:iconWidth="@dimen/item_detail_bottom_bar_icon_size"
+            OhImageButton:iconHeight="@dimen/item_detail_bottom_bar_icon_size"/>
+        
+    </LinearLayout>
+
+</LinearLayout>

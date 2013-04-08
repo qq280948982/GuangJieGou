@@ -1,0 +1,27 @@
+<resources>
+
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    
+    <!-- Tab -->
+    <dimen name="tab_footer_tab_bar_height">60dp</dimen>
+    <dimen name="tab_footer_tab_item_img_height">45dp</dimen>
+    
+    <!-- Header -->
+    <dimen name="header_height">40dp</dimen>
+    <dimen name="header_for_remen_bottom_border_height">5dp</dimen>
+    
+    <!-- Shop Item Detail -->
+	<dimen name="item_detail_bottom_bar_height">60dp</dimen>
+	<dimen name="item_detail_bottom_bar_icon_size">30dp</dimen>
+	<dimen name="item_detail_shop_owner_img_size">45dp</dimen>
+	<dimen name="item_detail_see_detail_btn_width">80dp</dimen>
+	<dimen name="item_detail_see_detail_btn_height">30dp</dimen>
+	
+	<!-- 搭配 -->
+	<dimen name="dapei_list_item_padding">10dp</dimen>
+	<dimen name="dapei_list_item_line_space">5dp</dimen>
+	<dimen name="dapei_list_item_image_height">150dp</dimen>
+
+</resources>

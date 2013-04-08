@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    
+    <com.tim.guangjiegou.view.ItemImageView 
+        android:id="@+id/item_price_flow_view_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+    <TextView 
+        android:id="@+id/item_price_flow_view_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_gravity="bottom|right"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:textSize="12dp"
+        android:background="@color/black_aa"/>
+
+</FrameLayout>

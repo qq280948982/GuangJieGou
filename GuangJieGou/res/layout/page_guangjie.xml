@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff3f3f3"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="54.0dip"
+            android:background="@drawable/search_bg"
+            android:gravity="center"
+            android:paddingLeft="8.0dip"
+            android:paddingRight="8.0dip" >
+
+            <EditText
+                android:layout_width="0.0dip"
+                android:layout_height="0.0dip"
+                android:background="@drawable/search_background"
+                android:focusable="true"
+                android:singleLine="true" />
+
+            <AutoCompleteTextView
+                android:id="@+id/page_guangjie_search_keyword"
+                android:layout_width="0dp"
+                android:layout_height="40.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/search_background"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="@string/guangjie_search_hint"
+                android:imeOptions="actionSearch"
+                android:paddingLeft="8.0dip"
+                android:singleLine="true"
+                android:textColor="@color/gray_light"
+                android:textColorHint="#80515151"
+                android:textSize="18.0sp" />
+
+            <Button
+                android:id="@+id/page_guangjie_search_btn"
+                android:layout_width="45.0dip"
+                android:layout_height="40.0dip"
+                android:background="@drawable/search_girl_selector"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/page_guangjie_grid"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="50.0dip"
+        android:layout_marginLeft="0.0dip"
+        android:layout_marginRight="0.0dip"
+        android:layout_marginTop="0.0dip"
+        android:columnWidth="150.0dip"
+        android:fadingEdge="none"
+        android:focusable="false"
+        android:listSelector="#fff3f3f3"
+        android:numColumns="2" />
+
+</LinearLayout>

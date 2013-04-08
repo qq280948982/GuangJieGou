@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:switch="http://schemas.android.com/apk/res/com.tim.guangjiegou"
+    android:id="@+id/page_shezhi_user_setting"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff6f6f6"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="5dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginTop="4.0dip"
+                android:drawableLeft="@drawable/set_point"
+                android:drawablePadding="2.0dip"
+                android:gravity="center_vertical"
+                android:text="@string/shezhi_user_login"
+                android:textColor="#ffabadb3"
+                android:textSize="16.0sp" />
+
+            <LinearLayout
+                android:id="@+id/page_shezhi_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6.0dip"
+                android:background="@drawable/settings_border"
+                android:orientation="vertical" >
+
+                <!-- 淘宝登录 -->
+                <LinearLayout
+                    android:id="@+id/page_shezhi_login_taobao"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:background="@drawable/settings_corner_bg"
+                    android:gravity="left|center" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0dip"
+                        android:background="@drawable/taobao_l" />
+
+                    <TextView
+                        android:id="@+id/page_shezhi_taobao_user"
+                        style="@style/setting_item_content_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_weight="1.0"
+                        android:text="@string/shezhi_taobao_login" />
+
+                    <ImageButton
+                        android:id="@+id/page_shezhi_login_btn_taobao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10.0dip"
+                        android:background="@drawable/settings_login_btn" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:background="#ffdddddd" />
+
+                <!-- QQ登录 -->
+                <LinearLayout
+                    android:id="@+id/page_shezhi_login_qq"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:background="@drawable/settings_corner_bg"
+                    android:gravity="left|center" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0dip"
+                        android:background="@drawable/qq_l" />
+
+                    <TextView
+                        android:id="@+id/page_shezhi_qq_user"
+                        style="@style/setting_item_content_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_weight="1.0"
+                        android:text="@string/shezhi_qq_login" />
+
+                    <ImageButton
+                        android:id="@+id/page_shezhi_login_btn_qq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8.0dip"
+                        android:background="@drawable/settings_login_btn"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:background="#ffdddddd" />
+
+                <!-- 新浪微博登录 -->
+                <LinearLayout
+                    android:id="@+id/page_shezhi_login_sina"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:background="@drawable/settings_corner_bg"
+                    android:gravity="left|center" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0dip"
+                        android:background="@drawable/sina_l" />
+
+                    <TextView
+                        android:id="@+id/page_shezhi_sina_user"
+                        style="@style/setting_item_content_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_weight="1.0"
+                        android:text="@string/shezhi_sina_weibo_login" />
+
+                    <ImageButton
+                        android:id="@+id/page_shezhi_login_btn_sina"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center"
+                        android:layout_marginRight="8.0dip"
+                        android:background="@drawable/settings_login_btn"/>
+                </LinearLayout>
+                               
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginTop="6.0dip"
+                android:drawableLeft="@drawable/set_point"
+                android:drawablePadding="2.0dip"
+                android:gravity="center_vertical"
+                android:text="@string/shezhi_general_settings"
+                android:textColor="#ffabadb3"
+                android:textSize="16.0sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                android:layout_marginLeft="6.0dip"
+                android:layout_marginRight="6.0dip"
+                android:background="@drawable/settings_border"
+                android:orientation="vertical" >
+
+	            <!-- 浏览模式 -->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:background="@drawable/settings_corner_top"
+                    android:clickable="false"
+                    android:gravity="left|center">
+
+                    <ImageView
+                        android:layout_width="28.0px"
+                        android:layout_height="28.0px"
+                        android:layout_marginLeft="15.0dip"
+                        android:background="@drawable/setting_update" />
+
+                    <TextView
+                        style="@style/setting_item_content_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8.0dip"
+                        android:layout_weight="1.0"
+                        android:text="@string/shezhi_browse_mode" />
+
+                    <lib.tim.view.OhSwitchView 
+                        android:id="@+id/page_shezhi_switch_browse_mode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        switch:textLeft="@string/shezhi_browse_mode_quality"
+                        switch:textRight="@string/shezhi_browse_mode_low_flow"/>
+                </LinearLayout>
+                
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:background="#ffdddddd" />
+                
+                <!-- 推送设置 -->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:background="@drawable/settings_corner_bottom"
+                    android:clickable="false"
+                    android:gravity="left|center">
+
+                    <ImageView
+                        android:layout_width="28.0px"
+                        android:layout_height="28.0px"
+                        android:layout_marginLeft="15.0dip"
+                        android:background="@drawable/setting_update" />
+
+                    <TextView
+                        style="@style/setting_item_content_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8.0dip"
+                        android:layout_weight="1.0"
+                        android:text="@string/shezhi_push_settings" />
+
+                    <lib.tim.view.OhSwitchView 
+                        android:id="@+id/page_shezhi_switch_push_settings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        switch:textLeft="@string/common_on"
+                        switch:textRight="@string/common_off"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginTop="12.0dip"
+                android:drawableLeft="@drawable/set_point"
+                android:drawablePadding="2.0dip"
+                android:gravity="center_vertical"
+                android:text="@string/shezhi_others_settings"
+                android:textColor="#ffabadb3"
+                android:textSize="16.0sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6.0dip"
+                android:background="@drawable/settings_border"
+                android:orientation="vertical" >
+
+                <!-- 清除图片缓存 -->
+                <LinearLayout
+                    android:id="@+id/page_shezhi_clear_image_cache"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:background="@drawable/settings_corner_shape"
+                    android:clickable="true"
+                    android:gravity="left|center" >
+
+                    <ImageView
+                        android:layout_width="28.0px"
+                        android:layout_height="28.0px"
+                        android:layout_marginLeft="15.0dip"
+                        android:background="@drawable/setting_clear_up" />
+
+                    <TextView
+                        style="@style/setting_item_content_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8.0dip"
+                        android:layout_weight="1.0"
+                        android:text="@string/shezhi_clear_image_cache" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10.0dip"
+                        android:background="@drawable/setting_right" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:background="#ffdddddd" />
+
+                <!-- 意见反馈 -->
+                <LinearLayout
+                    android:id="@+id/page_shezhi_feedback"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:background="@drawable/settings_corner_shape"
+                    android:clickable="true"
+                    android:gravity="left|center">
+
+                    <ImageView
+                        android:layout_width="28.0px"
+                        android:layout_height="28.0px"
+                        android:layout_marginLeft="15.0dip"
+                        android:background="@drawable/setting_apps" />
+
+                    <TextView
+                        style="@style/setting_item_content_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8.0dip"
+                        android:layout_weight="1.0"
+                        android:text="@string/shezhi_feedback" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8.0dip"
+                        android:background="@drawable/setting_right" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:background="#ffdddddd" />
+
+                <!-- 关于逛街购 -->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:background="@drawable/settings_corner_bottom"
+                    android:clickable="true"
+                    android:gravity="left|center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="28.0px"
+                        android:layout_height="28.0px"
+                        android:layout_marginLeft="15.0dip"
+                        android:background="@drawable/setting_about" />
+
+                    <TextView
+                        style="@style/setting_item_content_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8.0dip"
+                        android:layout_weight="1.0"
+                        android:text="@string/shezhi_about" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8.0dip"
+                        android:background="@drawable/setting_right" />
+                </LinearLayout>
+            </LinearLayout>
+<!-- 
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="3.0dip"
+                android:gravity="bottom|center"
+                android:text="兜兜购，口袋里的购物专家"
+                android:textColor="#ffabadb3"
+                android:textSize="20.0sp" />
+ -->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+{
+    "status": 0,
+    "error_code": 0,
+    "error_message": "",
+    "shops": [
+        {
+            "sid": 44750468,
+            "cid": 123456,
+            "nick": "csuky",
+            "title": "我的店铺",          
+            "bulletin": "我的店铺的公告",
+            "pic_path": "/e2/c0/T1KVXXXhGvt0L1upjX.jpg",
+            "created": "2000-01-01 00:00:00"
+        },
+        {
+            "bulletin": "<font style=\"font-size: 24pt\">小店装修中&nbsp; 请亲们理解</font>",
+            "cid": 14,
+            "created": "2010-11-17 15:55:19",
+            "nick": "浪漫金街",
+            "pic_path": "/ec/19/T12kbaXjVnXXartXjX",
+            "sid": 63527429,
+            "title": "浪漫金街"
+        },
+		{
+		    "bulletin": "",
+		    "cid": 14,
+		    "created": "2011-03-11 15:48:34",
+		    "nick": "秋天的漂叶",
+		    "pic_path": "/93/0f/T1.TFPXvXcXXb1upjX",
+		    "sid": 65391496,
+		    "title": "淑女屋 春装新款半价 金熹 天使之城 韩都 七格格 小维卓欧莎学习"
+		},
+		{
+		    "bulletin": "<font color=\"#ff3300\" face=\"宋体\" size=\"3\"><span><strong>祝福您每天心想事成！</strong></span></font><p></p><p><font color=\"#ff3300\" face=\"宋体\" size=\"3\"><strong></strong></font>&nbsp;</p>",
+		    "cid": 14,
+		    "created": "2006-06-02 10:12:06",
+		    "nick": "美妍9969",
+		    "pic_path": "/cc/d5/T1F_WvXeVWXXb1upjX",
+		    "sid": 33707554,
+		    "title": "美妍时尚〓美妍家 小清新日韩欧美风女装打底衫/针织衫/毛衣/"
+		},
+		{
+		    "bulletin": "",
+		    "cid": 14,
+		    "created": "2011-03-25 11:24:14",
+		    "nick": "fs一帆风顺fs",
+		    "pic_path": "/a1/02/T17DZXXepiXXb1upjX",
+		    "sid": 65718305,
+		    "title": "艾蓓怡-精品女装"
+		}
+    ]
+}
